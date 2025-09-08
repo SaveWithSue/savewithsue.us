@@ -18,10 +18,12 @@
   />
 
   <style>
-    /* site-wide Montserrat */
+    /* global reset */
     * {
       box-sizing: border-box;
     }
+
+    /* site-wide Montserrat */
     body {
       margin: 0;
       font-family: 'Montserrat', sans-serif;
@@ -30,7 +32,7 @@
       line-height: 1.6;
     }
 
-    /* headings in Black Mango */
+    /* headings use Black Mango */
     h1, h2, h3 {
       font-family: 'Black Mango', sans-serif;
     }
@@ -114,12 +116,13 @@
     .social {
       text-align: center;
       margin: 2rem 0;
-      font-size: 1.5rem;
+      font-size: 1rem;
     }
-    .social a {
-      margin: 0 .5rem;
-      text-decoration: none;
-      color: #333;
+    .social p {
+      margin-bottom: .5rem;
+    }
+    .social a.btn {
+      margin-top: .5rem;
     }
 
     footer {
@@ -132,6 +135,7 @@
     }
   </style>
 </head>
+
 <body>
 
   <header>
@@ -159,7 +163,6 @@
         </a>
         <div class="card-title">Thanksgiving Memory Pages</div>
       </div>
-
       <!-- 2 -->
       <div class="card">
         <a href="https://www.etsy.com/listing/4363633601/printable-kids-lunchbox-notes">
@@ -167,7 +170,6 @@
         </a>
         <div class="card-title">Printable Kids Lunchbox Notes</div>
       </div>
-
       <!-- 3 -->
       <div class="card">
         <a href="https://www.etsy.com/listing/4358180686/veterans-day-memory-journal-printable">
@@ -175,7 +177,6 @@
         </a>
         <div class="card-title">Veterans Day Memory Journal Printable</div>
       </div>
-
       <!-- 4 -->
       <div class="card">
         <a href="https://www.etsy.com/listing/4359543810/mediterranean-diet-meal-planner-grocery">
@@ -189,7 +190,7 @@
   <section id="about" class="container about">
     <h2>About Sue</h2>
     <p>
-      Hi, I’m Sue—a snowbird, grandma, and frugal homemaker. After decades of
+      Hi, I’m Sue—a snowbird, a grandma, and a frugal homemaker. After decades of
       reselling treasures on eBay (I continue to sell there and on Poshmark),
       I now create easy-to-use printables that help families save time and
       money while making memories.
@@ -198,7 +199,12 @@
 
   <section class="container social">
     <p>To contact me or find all my profiles, visit my Linktree:</p>
-    <a href="https://linktr.ee/savewithsue" target="_blank" rel="noopener" class="btn">
+    <a
+      href="https://linktr.ee/savewithsue"
+      target="_blank"
+      rel="noopener"
+      class="btn"
+    >
       Visit My Linktree
     </a>
   </section>
