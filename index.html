@@ -3,196 +3,41 @@
 <head>
   <meta charset="UTF-8" />
   <title>Save with Sue</title>
-  <meta name="description" content="Download frugal, family-friendly printables from Save with Sue—your resource for memory-making templates."/>
-  <!-- load Montserrat for body text -->
- <link
-  href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
-  rel="stylesheet"
-/>
+  <meta name="description" content="…"/>
 
-  <!-- load Black Mango for headings -->
+  <!-- 1) Montserrat for body text -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- 2) Black Mango for headings -->
   <link
     href="https://fonts.googleapis.com/css2?family=Black+Mango&display=swap"
     rel="stylesheet"
   />
 
+  <!-- 3) Your internal CSS -->
   <style>
-    /* apply Montserrat site-wide */
+    /* site-wide Montserrat */
     body {
       font-family: 'Montserrat', sans-serif;
-      /* … your existing rules … */
+      margin: 0;
+      /* …other body rules… */
     }
 
-    /* override only for headings */
+    /* override for just headings */
     h1, h2, h3 {
       font-family: 'Black Mango', sans-serif;
     }
 
-    /* … the rest of your CSS … */
-  </style>
-</head>
-
-    } 
-    :root {
-      --bg-start: #A8DAFA;
-      --bg-end:   #56AEFF;
-      --accent:   #56AEFF;
-      --text:     #333333;
-    }
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      font-family: 'Montserrat', sans-serif;
-      color: var(--text);
-      background: linear-gradient(135deg, var(--bg-start), var(--bg-end));
-      line-height: 1.6;
-    }
-    header {
-      background: rgba(255,255,255,0.85);
-      padding: 1rem;
-      text-align: center;
-      border-bottom: 2px solid var(--accent);
-      backdrop-filter: blur(4px);
-    }
-    header img.logo {
-      max-width: 200px;
-      height: auto;
-    }
-    nav { margin-top: .5rem; }
-    nav a {
-      margin: 0 .75rem;
-      color: var(--text);
-      text-decoration: none;
-      font-weight: 700;
-    }
-    .container { max-width: 1200px; margin: 2rem auto; padding: 0 1rem; }
-    .hero { text-align: center; }
-    .hero h1 { font-size: 2.5rem; margin-bottom: .5rem; }
-    .hero p { margin-bottom: 1.5rem; }
-    .btn {
-      display: inline-block;
-      background: var(--accent);
-      color: #fff;
-      padding: .75rem 1.5rem;
-      text-decoration: none;
-      border-radius: 4px;
-      font-weight: 700;
-    }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 1rem;
-      margin: 2rem 0;
-    }
-    .card {
-      background: #fff;
-      border-radius: 4px;
-      overflow: hidden;
-      text-align: center;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    }
-    .card img { width: 100%; height: auto; }
-    .card-title { padding: .5rem; font-weight: 700; color: var(--text); }
-    .about {
-      background: #ffffffcc;
-      padding: 1rem;
-      border-radius: 4px;
-      margin-bottom: 2rem;
-      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-    }
-    .social {
-      text-align: center; margin-bottom: 2rem;
-    }
-    .social a {
-      margin: 0 .5rem;
-      font-size: 1.5rem;
-      color: var(--text);
-      text-decoration: none;
-    }
-    footer {
-      background: rgba(255,255,255,0.85);
-      text-align: center;
-      padding: 1rem;
-      font-size: .85rem;
-      border-top: 1px solid #ddd;
-      backdrop-filter: blur(4px);
-    }
+    /* …the rest of your CSS… */
   </style>
 </head>
 <body>
-
-  <header>
-    <img src="logo.png" alt="Save with Sue logo" class="logo">
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#shop">Shop</a>
-      <a href="#about">About</a>
-
-    </nav>
-  </header>
-
-  <section id="home" class="container hero">
-    <h1>Save with Sue</h1>
-    <p>Your resource for frugal printables &amp; family memories.</p>
-    <a href="https://www.etsy.com/shop/SavewithSue" class="btn">Visit My Etsy Shop</a>
-  </section>
-
-  <section id="shop" class="container">
-    <h2>Top Printables</h2>
-    <div class="grid">
-      <!-- Repeat this block for each of your 3–4 items -->
-      <div class="card">
-  <a href="https://www.etsy.com/listing/12345678/thanksgiving-memory-pages">
-    <img src="thanksgiving-thumb-2.png" alt="Thanksgiving Memory Pages">
-  </a>
-  <div class="card-title">Thanksgiving Memory Pages</div>
-</div>
-<!-- 2. Printable Kids Lunchbox Notes -->
-<div class="card">
-  <a href="https://www.etsy.com/listing/4363633601/printable-kids-lunchbox-notes">
-    <img src="kidslunchboxnotes.png" alt="Printable Kids Lunchbox Notes">
-  </a>
-  <div class="card-title">Printable Kids Lunchbox Notes</div>
-</div>
-
-<!-- 3. Veterans Day Memory Journal Printable -->
-<div class="card">
-  <a href="https://www.etsy.com/listing/4358180686/veterans-day-memory-journal-printable">
-    <img src="veteransday.png" alt="Veterans Day Memory Journal Printable">
-  </a>
-  <div class="card-title">Veterans Day Memory Journal Printable</div>
-</div>
-
-<!-- 4. Mediterranean Diet Meal Planner & Grocery List -->
-<div class="card">
-  <a href="https://www.etsy.com/listing/4359543810/mediterranean-diet-meal-planner-grocery">
-    <img src="mediterraneandiet.png" alt="Mediterranean Diet Meal Planner & Grocery List">
-  </a>
-  <div class="card-title">Mediterranean Diet Meal Planner & Grocery List</div>
-</div>
-
-    </div>
-  </section>
-
-  <section id="about" class="container about">
-    <h2>About Sue</h2>
-    <p>Hi, I’m Sue—a snowbird, a grandma, and a frugal homemaker. After decades of reselling treasures on eBay (I continue to sell there and on Poshmark), I now create easy-to-use printables that help families save time and money while making memories.</p>
-  </section>
-
-
-<section class="container social">
-  <p>To contact me or find all my profiles, visit my Linktree:</p>
-  <p>
-    <a href="https://linktr.ee/savewithsue" target="_blank" rel="noopener" class="btn">
-      Visit My Linktree
-    </a>
-  </p>
-</section>
-
-
-  <footer>
-    © 2025 Save with Sue • Built with ❤️
-  </footer>
-
+  <!-- everything else lives here -->
+  <header>…</header>
+  <section id="home">…</section>
+  <!-- etc. -->
 </body>
 </html>
