@@ -1,14 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <title>Save with Sue</title>
-  <!-- Pinterest Domain Verification -->
-  <meta name="p:domain_verify" content="cd27b5c31acb72ccaf1923630dc7922d" />
+  <meta name="description" content="Download frugal, family-friendly printables from Save with Sue—your resource for memory-making templates.">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-start: #A8DAFA;
+      --bg-end:   #56AEFF;
+      --accent:   #56AEFF;
+      --text:     #333333;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      color: var(--text);
+      background: linear-gradient(135deg, var(--bg-start), var(--bg-end));
+      line-height: 1.6;
+    }
+    header {
+      background: rgba(255,255,255,0.85);
+      padding: 1rem;
+      text-align: center;
+      border-bottom: 2px solid var(--accent);
+      backdrop-filter: blur(4px);
+    }
+    header img.logo {
+      max-width: 200px;
+      height: auto;
+    }
+    nav { margin-top: .5rem; }
+    nav a {
+      margin: 0 .75rem;
+      color: var(--text);
+      text-decoration: none;
+      font-weight: 700;
+    }
+    .container { max-width: 800px; margin: 2rem auto; padding: 0 1rem; }
+    .hero { text-align: center; }
+    .hero h1 { font-size: 2.5rem; margin-bottom: .5rem; }
+    .hero p { margin-bottom: 1.5rem; }
+    .btn {
+      display: inline-block;
+      background: var(--accent);
+      color: #fff;
+      padding: .75rem 1.5rem;
+      text-decoration: none;
+      border-radius: 4px;
+      font-weight: 700;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+      margin: 2rem 0;
+    }
+    .card {
+      background: #fff;
+      border-radius: 4px;
+      overflow: hidden;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .card img { width: 100%; height: auto; }
+    .card-title { padding: .5rem; font-weight: 700; color: var(--text); }
+    .about {
+      background: #ffffffcc;
+      padding: 1rem;
+      border-radius: 4px;
+      margin-bottom: 2rem;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+    .social {
+      text-align: center; margin-bottom: 2rem;
+    }
+    .social a {
+      margin: 0 .5rem;
+      font-size: 1.5rem;
+      color: var(--text);
+      text-decoration: none;
+    }
+    footer {
+      background: rgba(255,255,255,0.85);
+      text-align: center;
+      padding: 1rem;
+      font-size: .85rem;
+      border-top: 1px solid #ddd;
+      backdrop-filter: blur(4px);
+    }
+  </style>
 </head>
 <body>
-  <h1>Save with Sue</h1>
-  <p>Your resource for frugal printables & family memories.</p>
-  <p><a href="https://savewithsue.etsy.com">Visit my Etsy shop</a></p>
+
+  <header>
+    <img src="logo.png" alt="Save with Sue logo" class="logo">
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#shop">Shop</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="home" class="container hero">
+    <h1>Save with Sue</h1>
+    <p>Your resource for frugal printables &amp; family memories.</p>
+    <a href="https://www.etsy.com/shop/SavewithSue" class="btn">Visit My Etsy Shop</a>
+  </section>
+
+  <section id="shop" class="container">
+    <h2>Top Printables</h2>
+    <div class="grid">
+      <!-- Repeat this block for each of your 3–4 items -->
+      <div class="card">
+        <a href="#"><img src="thumb1.jpg" alt="Product 1"></a>
+        <div class="card-title">Product 1 Title</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="container about">
+    <h2>About Sue</h2>
+    <p>Hi, I’m Sue—a snowbird, grandma, and frugal homemaker. After decades of reselling treasures, I now create easy-to-use printables that help families save time and money while making memories.</p>
+  </section>
+
+  <section class="container social">
+    <h2>Connect with Me</h2>
+    <a href="#"><!-- Instagram SVG --></a>
+    <a href="#"><!-- Pinterest SVG --></a>
+    <a href="#"><!-- YouTube SVG --></a>
+  </section>
+
+  <footer>
+    © 2025 Save with Sue • Built with ❤️
+  </footer>
+
 </body>
 </html>
